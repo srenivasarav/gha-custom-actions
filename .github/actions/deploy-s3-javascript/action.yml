@@ -1,4 +1,5 @@
 name: Deploy App S3 Bucket
 description: 'Deploying Static web application to AWS S3 Bucket'
-using: 'node16'
-main: 'main.js'
+runs:
+  using: 'node16'
+  main: 'main.js'
