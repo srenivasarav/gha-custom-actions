@@ -13,6 +13,8 @@ jobs:
         uses: actions/checkout@v3
       - name: Load and Get cache dependencies
         uses: ./.github/actions/cache-dependencies/
+        with:
+          caching: false
       - name: Lint code
         run: npm run lint
   test:
