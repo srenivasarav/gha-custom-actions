@@ -1,7 +1,7 @@
 name: Deploy App S3 Bucket
 description: 'Deploying Static web application to AWS S3 Bucket'
 inputs:
-  buckets:
+  bucket:
     description: 'The AWS S3 Bucket Hostin Statis Website'
     required: true
   bucket-region:
