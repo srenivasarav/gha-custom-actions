@@ -1,5 +1,16 @@
 name: Deploy App S3 Bucket
 description: 'Deploying Static web application to AWS S3 Bucket'
+inputs:
+  buckets:
+    description: 'The AWS S3 Bucket Hostin Statis Website'
+    required: true
+  bucket-region:
+    description: 'The regon of the bucket location'
+    required: false
+    default: 'us-east-1'
+  dist-folder:
+    description: 'The folder contanining the deployable files'
+    required: true
 runs:
   using: 'node16'
   main: 'main.js'
